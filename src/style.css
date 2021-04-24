@@ -115,6 +115,13 @@ nav a:hover {
   outline: none;
 }
 
+/* 2.3 Všimněte si, že ikonka pro zobrazení navigace se zobrazuje i v případě, že jsme na širokém monitoru. Upravte CSS v souboru style.css tak, aby se ikonka na široké obrazovce nezobrazovala. Proveďte commit vašich změn s nějakou dobře popisnou zprávou. */
+@media only screen and (min-width: 768px) {
+  .nav-btn {
+    diplay: none;
+  }
+}
+
 .banner {
   padding-top: 0;
 
@@ -240,6 +247,16 @@ nav a:hover {
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
+}
+
+/* 2.5 Sekce galerie je jeden velký obrázek a jinak je poměrně prázdná. Doplňte do ní odstaveček textu popisující interiér kavárny tak, aby příliš nezakrýval obrázek a zapadl do celkového vzezření stránky. */
+
+.gallery__description {
+  margin: 20px;
+  max-width: 748px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  font-size: 2em;
 }
 
 .contacts {
