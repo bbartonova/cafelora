@@ -59,19 +59,62 @@ orderBtnElm.addEventListener('click', () => {
 
 // 4.3 Ve chvíli, kdy máte objednávání funkční commitněte váš kód se smysluplnou zprávnou a pushněte jej.
 
-// cvičení5
+// cvičení 5 - přepisuje se přes cvičení 6, proto zakomentovávám
 
 const drinkInfoElm = document.querySelector('.drink__info');
-drinkInfoElm.innerHTML +=
-  Layer({
+// drinkInfoElm.innerHTML +=
+//   Layer({
+//     color: '#feeeca',
+//     label: 'mléčná pěna',
+//   }) +
+//   Layer({
+//     color: '#fed7b0',
+//     label: 'teplé mléko',
+//   }) +
+//   Layer({
+//     color: '#613916',
+//     label: 'espresso',
+//   });
+
+//6 Seznam ingrediencí
+// to dáš
+// V tomto cvičení budeme chtít zařídit, abychom seznam ingrediencí dokázali zobrazit podle dat uložených v poli.
+
+// Uvnitř hlavního index.js si vytvořte následujicí globální proměnnou.
+
+// const layers = [
+//   {
+//     color: '#feeeca',
+//     label: 'mléčná pěna',
+//   },
+//   {
+//     color: '#fed7b0',
+//     label: 'teplé mléko',
+//   },
+//   {
+//     color: '#613916',
+//     label: 'espresso',
+//   },
+// ];
+
+const layers = [
+  {
     color: '#feeeca',
     label: 'mléčná pěna',
-  }) +
-  Layer({
+  },
+  {
     color: '#fed7b0',
     label: 'teplé mléko',
-  }) +
-  Layer({
+  },
+  {
     color: '#613916',
     label: 'espresso',
-  });
+  },
+];
+
+// Použijte cyklus for nebo forEach, projděte seznam ingrediencí položku po položce a pomocí komponenty Layer je zobrazte každou ingredienci na stránce.
+
+layers.forEach((item) => {
+  drinkInfoElm.innerHTML += Layer(item);
+});
+// Jakmile je váš kód funkční, udělejte commit s profesionálně napsanou zprávou a pushněte váš kód do vzdáleného repozitáře.
