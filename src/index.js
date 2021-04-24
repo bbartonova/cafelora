@@ -49,7 +49,7 @@ orderBtnElm.addEventListener('click', () => {
     orderBtnElm.textContent = 'Zrušit';
     ordered = true;
   } else {
-    drinkCupElm.classList.add('drink__cup--selected');
+    drinkCupElm.classList.remove('drink__cup--selected');
     orderBtnElm.textContent = 'Objednat';
     ordered = false; // na false, abychom mohli zase objednat
   }
