@@ -118,7 +118,7 @@ nav a:hover {
 /* 2.3 Všimněte si, že ikonka pro zobrazení navigace se zobrazuje i v případě, že jsme na širokém monitoru. Upravte CSS v souboru style.css tak, aby se ikonka na široké obrazovce nezobrazovala. Proveďte commit vašich změn s nějakou dobře popisnou zprávou. */
 @media only screen and (min-width: 768px) {
   .nav-btn {
-    diplay: none;
+    display: none;
   }
 }
 
